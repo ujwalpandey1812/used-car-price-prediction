@@ -1,0 +1,146 @@
+{
+  "final_model_name": "Tuned XGBoost",
+  "features": {
+    "numeric": [
+      "car_age",
+      "kms_run",
+      "total_owners"
+    ],
+    "categorical": [
+      "fuel_type",
+      "body_type",
+      "transmission",
+      "city",
+      "registered_state",
+      "make",
+      "source",
+      "car_availability"
+    ],
+    "boolean": [
+      "assured_buy",
+      "warranty_avail",
+      "fitness_certificate"
+    ]
+  },
+  "category_options": {
+    "fuel_type": [
+      "diesel",
+      "electric",
+      "petrol",
+      "petrol & cng",
+      "petrol & lpg"
+    ],
+    "body_type": [
+      "hatchback",
+      "luxury sedan",
+      "luxury suv",
+      "missing",
+      "sedan",
+      "suv"
+    ],
+    "transmission": [
+      "automatic",
+      "manual",
+      "missing"
+    ],
+    "city": [
+      "ahmedabad",
+      "bengaluru",
+      "chennai",
+      "faridabad",
+      "ghaziabad",
+      "gurgaon",
+      "hyderabad",
+      "kolkata",
+      "lucknow",
+      "mumbai",
+      "new delhi",
+      "noida",
+      "pune"
+    ],
+    "registered_state": [
+      "andhra pradesh",
+      "chandigarh",
+      "chhattisgarh",
+      "delhi",
+      "gujarat",
+      "haryana",
+      "jharkhand",
+      "karnataka",
+      "maharashtra",
+      "missing",
+      "punjab",
+      "rajasthan",
+      "tamil nadu",
+      "telangana",
+      "uttar pradesh",
+      "uttarakhand",
+      "west bengal"
+    ],
+    "make": [
+      "audi",
+      "bmw",
+      "chevrolet",
+      "datsun",
+      "fiat",
+      "ford",
+      "honda",
+      "hyundai",
+      "isuzu",
+      "jaguar",
+      "jeep",
+      "kia",
+      "mahindra",
+      "mahindra renault",
+      "maruti",
+      "mercedes benz",
+      "mg",
+      "mitsubishi",
+      "nissan",
+      "opel",
+      "renault",
+      "skoda",
+      "ssangyong",
+      "tata",
+      "toyota",
+      "volkswagen",
+      "volvo"
+    ],
+    "source": [
+      "customer_to_customer",
+      "inperson_sale",
+      "missing",
+      "online"
+    ],
+    "car_availability": [
+      "in_stock",
+      "in_transit",
+      "missing",
+      "out_of_stock",
+      "pickup_pending"
+    ]
+  },
+  "numeric_ranges": {
+    "car_age": {
+      "min": 0.0,
+      "max": 25.0,
+      "median": 7.0
+    },
+    "kms_run": {
+      "min": 60.0,
+      "max": 996609.0,
+      "median": 55785.0
+    },
+    "total_owners": {
+      "min": 1.0,
+      "max": 6.0,
+      "median": 1.0
+    }
+  },
+  "test_metrics": {
+    "MAE": 63107.921875,
+    "RMSE": 94228.04678013865,
+    "R2": 0.8739053010940552
+  },
+  "random_seed": 42
+}

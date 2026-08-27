@@ -1,0 +1,6 @@
+KPI,Category,Definition,Formula,Target,Actual,Interpretation
+Price Estimation Accuracy,Business,Percentage of test-set predictions within +/-10% of actual sale price,count(|pred-actual|/actual <= 0.10) / n * 100,>= 80%,44.83%,Below target
+MAE,ML,Average absolute difference between predicted and actual sale price (INR),mean(|pred - actual|),Minimize,₹63107.92,Average prediction error is ₹63108
+R2 (Coefficient of Determination),ML,Proportion of variance in sale_price explained by the model,1 - (SS_res / SS_tot),>= 0.85,0.8739,Meets target
+Missing Value Rate,Data Quality,Proportion of missing cells in the raw uploaded dataset,missing_cells / total_cells,< 5%,2.20%,Within target
+Prediction Latency,Product / Engineering,Time taken by the trained pipeline to generate a single prediction,"wall-clock time for one .predict() call, averaged over 50 runs",< 2 sec,6.69 ms,Meets target
